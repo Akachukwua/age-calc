@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  
+  <title>Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+<div class="upperSection">
+  <div class="inputDiv">
+    <p>DAY</p>
+    <input id="day" type="number">
+  </div>
+  <div class="inputDiv">
+    <p>MONTH</p>
+    <input id="month" type="number">
+  </div>
+  <div class="inputDiv">
+    <p>YEAR</p>
+    <input id="year" type="number">
+  </div>
+</div>
+<div class="lowerSection">
+  <button onclick="calculate()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+    <g fill="none" stroke="#FFF" stroke-width="2">
+      <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+    </g>
+  </svg></button>
+  <div class="dob"><span id="spanYear">--</span><p>years</p></div>
+  <div class="dob"><span id="spanMonth">--</span><p>months</p></div>
+  <div class="dob"><span id="spanDay">--</span><p>days</p></div>
+</div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
